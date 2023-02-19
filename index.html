@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>TodoList</title>
+</head>
+<body>
+    <div class="todo-container">
+        <div id="alrt" class="sweet">
+            <p>Please Fill Your Task Name!</p>
+        </div>
+        <span id="exist">Task Already Exists!</span>
+        <div class="add-task">
+            <input type="text" id="userInput" />
+            <div class="my-btn">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <ul class="tasks">
+            <li id="empty">no tasks to show</li>
+            <!-- <li>
+                <span>task one</span>
+                <button class="delete">delete</button>
+            </li>
+            <li>
+                <span class="task-number">task one</span>
+                <button class="delete">delete</button>
+            </li> -->
+        </ul>
+        <div class="info">
+            <div class="left">
+                <div class="type">tasks</div>
+                <span id="taskNumber" class="cal">0</span>
+            </div>
+            <div class="right">
+                <div class="type">completed</div>
+                <span id="completedNum" class="cal">0</span>
+            </div>
+        </div>
+        <div class="sum">
+            <span id="delAll">Delete All</span>
+            <span id="finAll">Finish All</span>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
